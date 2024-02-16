@@ -20,6 +20,8 @@
 
 html,
 body {
+  background-color: var(--stone-800);
+  color: var(--stone-200);
   margin: 0;
 }
 
@@ -28,7 +30,6 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
 }
 
 li {
@@ -47,6 +48,25 @@ li a:hover:not(.active) {
   background-color: #111;
 }
 
-.active {
-  background-color: #04AA6D;
+nav {
+  background-color: var(--stone-950);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 65%;
+}
+
+.logo {
+  border-radius: 50%;
+  width: 50%;
+}
+
+section {
+  display: flex;
+  justify-content: space-around;
+}
+
+.half-section{
+  width: 50%;
 }
