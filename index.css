@@ -22,6 +22,7 @@ html,
 body {
   background-color: var(--stone-800);
   color: var(--stone-200);
+  min-height: 100vh;
   margin: 0;
 }
 
@@ -55,18 +56,31 @@ nav {
 .container {
   margin: 0 auto;
   max-width: 65%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
+
 
 .logo {
   border-radius: 50%;
-  width: 50%;
+  width: 80%;
 }
 
 section {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
-.half-section{
+.half-section {
   width: 50%;
+}
+
+.project-title {
+  font-size: 2.5em;
+  font-weight: bold;
 }
