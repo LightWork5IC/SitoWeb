@@ -26,61 +26,42 @@ body {
   margin: 0;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  background-color: #111;
-}
-
-nav {
-  background-color: var(--stone-950);
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 65%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-
-.logo {
-  border-radius: 50%;
-  width: 80%;
-}
-
-section {
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.half-section {
-  width: 50%;
+.contacts {
+  color: var(--stone-100);
 }
 
-.project-title {
-  font-size: 2.5em;
-  font-weight: bold;
+.made-for-educational-purpose {
+  text-align: center;
+}
+
+.social-icons {
+  text-align: right;
+}
+
+.social-icons a {
+  text-decoration: none;
+  margin-right: 10px;
+  color: var(--stone-100);
+}
+
+.social-icons a:visited {
+  color: var(--stone-100);
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+.mail-contact {
+  color: var(--stone-100);
 }
