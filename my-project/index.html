@@ -1,75 +1,159 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <link rel="stylesheet" href="./src/index.css">
-  </head>
-  <body>
-    <!-- Start Body -->
-    <div class="container mx-auto">
-      <div class="hero min-h-screen bg-base-200">
-        <div class="hero-content flex-col lg:flex-row">
-          <img src="./images/logo.png" class="max-w-sm rounded-2xl shadow-2xl" />
-          <div>
-            <h1 class="text-5xl font-bold">Lightwork</h1>
-            <p class="py-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora quaerat neque eaque molestiae cupiditate vero commodi, assumenda, mollitia labore culpa maxime nulla cum repudiandae quas laudantium dolor itaque tempore numquam.</p>
-            <button class="btn btn-primary">Get Started</button>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lightwork</title>
+  <link rel="stylesheet" href="./src/index.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="fixed top-0 w-full z-10">
+    <div class="navbar bg-base-200">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
           </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a>Il progetto</a></li>
+            <li><a>Il team</a></li>
+            <li><a>I dati</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-xl">Lightwork</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Il progetto</a></li>
+          <li><a>Il team</a></li>
+          <li><a>I dati</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn btn-ghost" href="https://www.instagram.com/lightwork.project/" target="_blank">
+          <i class="ri-instagram-line ri-xl"></i>
+        </a>
+        <a class="btn btn-ghost" href="https://twitter.com/LightWork5IC" target="_blank">
+          <i class="ri-twitter-x-line ri-lg"></i>
+        </a>
+        <a class="btn btn-ghost" href="https://github.com/LightWork5IC/SitoWeb" target="_blank">
+          <i class="ri-github-fill ri-xl"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container mx-auto mt-20">
+    <div class="hero min-h-screen">
+      <div class="hero-content flex-col lg:flex-row">
+        <img src="./images/logo.png" class="max-w-sm rounded-2xl shadow-2xl" />
+        <div>
+          <h1 class="text-5xl font-bold">Lightwork</h1>
+          <p class="py-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora quaerat neque eaque
+            molestiae cupiditate vero commodi, assumenda, mollitia labore culpa maxime nulla cum repudiandae quas
+            laudantium dolor itaque tempore numquam.</p>
+          <button class="btn btn-primary">Get Started</button>
         </div>
       </div>
-      <div class="divider"></div>
-      <div class="hero min-h-screen bg-base-200">
-        <div class="hero-content flex-col lg:flex-row-reverse">
-          <img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" class="max-w-sm rounded-lg shadow-2xl" />
-          <div>
-            <h1 class="text-5xl font-bold">Il Progetto</h1>
-            <p class="py-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet iste perferendis odio dolorem fugiat quis, atque dolore et debitis, corporis distinctio? Animi ipsam inventore commodi tempora laudantium fugiat amet ab.</p>
-            <button class="btn btn-primary">Get Started</button>
-          </div>
+    </div>
+    <div class="divider"></div>
+    <div class="hero min-h-screen">
+      <div class="hero-content flex-col lg:flex-row-reverse">
+        <img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
+          class="max-w-sm rounded-lg shadow-2xl" />
+        <div>
+          <h1 class="text-5xl font-bold">Il Progetto</h1>
+          <p class="py-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet iste perferendis odio dolorem
+            fugiat quis, atque dolore et debitis, corporis distinctio? Animi ipsam inventore commodi tempora laudantium
+            fugiat amet ab.</p>
+          <button class="btn btn-primary">Get Started</button>
         </div>
       </div>
-      <div class="divider"></div>
-      <div class="hero min-h-screen bg-base-200">
-        <div class="hero-content flex-col lg:flex-row">
-          <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSDxEQERAQEBMQEBIQDxEQEhEPFhAQFRUXFhUTFhMYKDQgGBonGxUTITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGhAQGyslICYrKy0rLS0vMS0tLS0tNzUtLS0tLS0rLSsrLS0tLS0tLS0tLS0tLS0tLS0tLSstLS0tLf/AABEIAKIBNgMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAAAwQFBgIBB//EADkQAAIBAQQGCAQGAwADAAAAAAABAhEDBAVxEiExQVFhExQyM1OSscEiUoGRI2JyodHwQuHxFUOC/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAEDAgT/xAAgEQEBAAMAAgIDAQAAAAAAAAAAAQIRMQMhMkESUWET/9oADAMBAAIRAxEAPwD9pAAAAAACOVvBOjnBNbU5JASAi6zDxIeaI6zDxIeaJdVNpQRdZh4kPNEdZh4kPNEaptKCLrMPEh5ojrMPEh5ojVNpQRdZh4kPNEdZh4kPNEaptKCLrMPEh5ojrMPEh5ojVNpQRdZh4kPNEdZh4kPNEaptKCLrMPEh5ojrMPEh5ojVNpQRdZh4kPNEdZh4kPNEaptKCLrMPEh5ojrMPEh5ojVNpQRdZh4kPNEdZh4kPNEaptKCLrMPEh5ojrMPEh5ojVNpQRdZh4kPNEdZh4kPNEaptKCLrMPEh5ojrMPEh5ojVNpQRdZh4kPNE9QtYy7Moypto0/QaXb2ACAAAAAAAAAAABzeJd9PP2R0hzeJd9PP2Rr4uuM+KwAN2QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAamA9qeS9TLNTAe1PJepxn8a6x62QAeZsAAAAAAAAAAAc3iXfTz9kdIc3iXfTz9ka+LrjPisADdkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGpgPankvUyzUwHtTyXqcZ/GusetkAHmbAAAAAAAAAAAHN4l308/ZHSHN4l308/ZGvi64z4rAA3ZAAAAAACzZYfaSVVBrOkfU829znDXKLpxWtfdE3F1UAAKgAAAPdjYym6Ri5ZbvqWHhlr8v7xJbIuqqA+zg06NNNbnqPhUAAAALVnh9pJVUGs2o/syWyGlUE1vdJw1yi0uO1fdEJZdgAAAAAGpgPankvUyzUwHtTyXqcZ/GusetkAHmbAAAAAAAAAAAHN4l308/ZHSHN4l308/ZGvi64z4rAA3ZAAAGxg9zVOkkqt9jkuOZjnT3Pu4U+SPoZ+S6jvCe0wAPO1YWLXNQalFUjLdwkZ5v4z3L/VGmf8AamAenx3cY5TVCW6WDnNRW/a+C3siNHAu8l+jV90XK6iSbrZsbJRioxVEj2AeVur326K0jR7V2Xwf8HNSVG09qdHmdacziHezp8z++828V+mec+0AB8Nmbbwe5pRVpJVb7PJcczTI7v2IU2aMafYkPLld1vJqDMDFbooSUo9mW7g+Bvmfjfdf/ap9mXx3VTKemEAD0sQAADUwHtTyXqZZqYD2p5L1OM/jXWPWyADzNgAAAAAAAAAADm8S76efsjpDm8S76efsjXxdcZ8VgAbsg+qL3Jv6GzhuHJJTmqt61F7Eua4mmjLLyycdzByRs4Pe049G3rXZ5rhmXL1c42i1qj3SW1fyZ1xw1OUlNusHTRWqq3OvAXKZT2sxsrZB8Spq/wBnm2slKLi60fBtehg0Y2MXtSahF1UXVvjIzki+sPTtnZxk3GPafDlzZs2FhGCpFJc97zZv+cxmoy/G5VzDi1tTWeoludvoTUuG1cVvOmlFNUaTXB6zGxLD1H446o1SktujXeuQnkmXqlxs9tiytFJKUXVPYz0V7ndI2a+Grrtbe36bCwY3+NIgvl6VnGr2/wCK4s5qUqtt7W6vM2sUuUXGVppNNLe3JPlr2DDsOSSlNVk9aT2R+nE1wsxm3GUtrFUXwf2Ph1pWvdyjaLWqS3SW368SzylwVsHvacVZt/FHs80aRjYfh8W5abelCVHFasnU2EjPPW/TrHen0wcXvanJRjrjHfxkbVvYqcdF1o+DaMWGHp20oKTcY9qXDlmXx67Uz3xQSDi1tTWeo6mxsIwVIpL1ebPc4pqjSa4PWdf6/wAT/NyYNHFLhofHHst0a+V/wZxrLLNxxZoNTAe1PJeplmpgPankvU5z+NXHrZAB5mwAAAAAAAAAABzeJd9PP2R0hzeJd9PP2Rr4uuM+KxJdo1nBPY5RTyqRn2EqNNbU01mjdk6wEdhbKcVJbH+z3okPG9AVZKlvH81nJP6NU9S0VbB6VpKf+KXRwfHXWT+9F9CxKtAAis/BlWE5b5Wjr/fqzQM+5vo7Wdk9Sk9Oz513f3gaB1n1MeBHeIVhJPfF+hIVsQtaQ0VrlP4ILm95J0ph0q2MH+Wn21FkjsLPRjGPypIkF6RUxBV6KO6VrGvNKroWytf7NuFY9qDU482t32qTWNqpRUlsa/qLeH29gA5VUeq8L81k6/SWplsqXZ6dpK0/xS6OD4pOsn9y2XJIFHB1+G5b5Tk2XihcnoWk7J6qtzs+ae1f3mWcper4AOVQ3uNbOafyv0OXOhxW8KNm1vmtFLlvZz5v4uMs+hqYD2p5L1Ms1MB7U8l6nWfxqY9bIAPM2AAAAAAAAAAAObxLvp5+yOkObxLvp5+yNfF1xnxWCQNrCLlRK0kvifZ5Ljma5ZfjGcm3zDLnaR+Jy0U9sNtc+BqAHmyu7ttJpWvtlOUaQklxTqtLlpLYebrelXo3Ho5Jao7mvyveWyvfLqrSNNklrhLgyy/VLPtYBVw+8OcWpapwejNe5FfJuc1YxdFStrJblw/vEfj70b9PF6l0z0bONdF97Wii+T3l6wjJRSlLSfGlD1Z2ailGKolsR6Fv0SPjM2SnZTdpNdKtmmtTgv07jTBJdFm3ixtVJKUXVM9mVbLoLRTj3c3SUeD5GhbW6jBzexKq58C3H9Er5ebzGC162+zFa3J8kV7rYT03PVZqWt2a+KvN8HkfbjYN/iz1zls/JHckXRfXqHQq36xnJUjJJb4uq0uWki0CS6Wql0vSb6Nx6OS1aD2U5Mtla/XVWkeElrhLgz5h15c4tS1Sg9GS9y2bm4k/S0Z15fTPRs1XRfe1oovk957vUnaT6GLokq2rXD5S5ZwUUklRLUkhPXtOvljFqKUpaT40pU9Plq/c+g5dMDEbpaJucnpr5lu+m4onWtHP4pc+jlWPZls5Pgb4Z79Vlljr2pGpgPankvUyzUwHtTyXqdZ/Gpj1sgA8zYAAAAAAAAAAA5vEu+nn7I6Q5vEu+nn7I18XXGfEd0stK0jHi9eW/wDY6g57B1+NHKXozoR5b7MOAAMnYAAM62fR3hS3WkHpZxVfZHrCI/DK0e20k28l/upDjuyD5yX3SLmGr8GGXuzS/HbifJZABm7AABBfbLTs5R5VWa1oybva9IrGye6TcucVrXubpg4OvxslI0w5XGXY3gAZuwAADNtJdHeNLdaQbeaVfZfc0jJx7/1v9S9DvDunOXFjCY/A5vbaScn9/wDpeK9wX4UP0osHOXVnAAEUK2IWWlZSXBaSzWssnxosuqVyZqYD2p5L1MpGrgPankvU9GfxrHHrZAB5mwAAAAAAAAAABSt8MhKTk3OrdXRr+C6Cy2cSzandsOhCSknKqrta3/QuAC23pJoABFAABXvd0jaJKTaprVKIlsbJRioqtEqKp7Bd+tGgAEAAACpdsPjCWknKtGtbVNf0LYLumgAEAAACve7nG0ppOS0a0o0tv/CwCy6Hiys1GKiq0iqKp7AIAAAAADO/8PZ8Z/eP8Fi6XKNm24uTqqOrTLIOrlamoAA5UAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH/9k=" class="max-w-sm rounded-2xl shadow-2xl" />
-          <div>
-            <h1 class="text-5xl font-bold">Il Team</h1>
-            <p class="py-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora quaerat neque eaque molestiae cupiditate vero commodi, assumenda, mollitia labore culpa maxime nulla cum repudiandae quas laudantium dolor itaque tempore numquam.</p>
-            <button class="btn btn-primary">Get Started</button>
-          </div>
+    </div>
+    <div class="divider"></div>
+    <div class="hero min-h-screen">
+      <div class="hero-content flex-col lg:flex-row">
+        <img
+          src="data:image/jpeg;base64,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"
+          class="max-w-sm rounded-2xl shadow-2xl" />
+        <div>
+          <h1 class="text-5xl font-bold">Il Team</h1>
+          <p class="py-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora quaerat neque eaque
+            molestiae cupiditate vero commodi, assumenda, mollitia labore culpa maxime nulla cum repudiandae quas
+            laudantium dolor itaque tempore numquam.</p>
+          <button class="btn btn-primary">Get Started</button>
         </div>
       </div>
-      <div class="divider"></div>
-      <div class="hero min-h-screen bg-base-200">
-        <div class="hero-content flex-col lg:flex-row">
-          <div>
-            <h1 class="text-5xl font-bold">I Dati</h1>
-            <p class="py-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora quaerat neque eaque molestiae cupiditate vero commodi, assumenda, mollitia labore culpa maxime nulla cum repudiandae quas laudantium dolor itaque tempore numquam.</p>
-            <div class="grid sm:grid-cols-2 gap-x-4">
-              <div>
-                <div class="infogram-embed" data-id="840df0c2-8756-4f80-a40e-5ae98431cf94" data-type="interactive" data-title="Infografica dinamica"></div><script>!function(e,n,i,s){var d="InfogramEmbeds";var o=e.getElementsByTagName(n)[0];if(window[d]&&window[d].initialized)window[d].process&&window[d].process();else if(!e.getElementById(i)){var r=e.createElement(n);r.async=1,r.id=i,r.src=s,o.parentNode.insertBefore(r,o)}}(document,"script","infogram-async","https://e.infogram.com/js/dist/embed-loader-min.js");</script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"><a href="https://infogram.com/840df0c2-8756-4f80-a40e-5ae98431cf94" style="color:#989898!important;text-decoration:none!important;" target="_blank">Infografica dinamica</a><br><a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a></div>
+    </div>
+    <div class="divider"></div>
+    <div class="hero min-h-screen">
+      <div class="hero-content flex-col lg:flex-row">
+        <div>
+          <h1 class="text-5xl font-bold">I Dati</h1>
+          <p class="py-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora quaerat neque eaque
+            molestiae cupiditate vero commodi, assumenda, mollitia labore culpa maxime nulla cum repudiandae quas
+            laudantium dolor itaque tempore numquam.</p>
+          <div class="grid sm:grid-cols-2 gap-x-4">
+            <div>
+              <div class="infogram-embed" data-id="840df0c2-8756-4f80-a40e-5ae98431cf94" data-type="interactive"
+                data-title="Infografica dinamica"></div>
+              <script>!function (e, n, i, s) { var d = "InfogramEmbeds"; var o = e.getElementsByTagName(n)[0]; if (window[d] && window[d].initialized) window[d].process && window[d].process(); else if (!e.getElementById(i)) { var r = e.createElement(n); r.async = 1, r.id = i, r.src = s, o.parentNode.insertBefore(r, o) } }(document, "script", "infogram-async", "https://e.infogram.com/js/dist/embed-loader-min.js");</script>
+              <div
+                style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px">
+                <a href="https://infogram.com/840df0c2-8756-4f80-a40e-5ae98431cf94"
+                  style="color:#989898!important;text-decoration:none!important;" target="_blank">Infografica
+                  dinamica</a><br><a href="https://infogram.com"
+                  style="color:#989898!important;text-decoration:none!important;" target="_blank"
+                  rel="nofollow">Infogram</a>
               </div>
-              <img src="./images/lavoro.png">
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="divider"></div>
-      <div class="hero min-h-screen bg-base-200">
-        <div class="hero-content flex-col lg:flex-row">
-          <img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" class="max-w-sm rounded-lg shadow-2xl" />
-          <div>
-            <h1 class="text-5xl font-bold">La nostra Analisi</h1>
-            <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-            <button class="btn btn-primary">Get Started</button>
+            <img src="./images/lavoro.png">
           </div>
         </div>
       </div>
     </div>
-    <!-- End Body -->
-    <script type="module" src="/main.js"></script>
-  </body>
+    <div class="divider"></div>
+    <div class="hero min-h-screen">
+      <div class="hero-content flex-col lg:flex-row">
+        <img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
+          class="max-w-sm rounded-lg shadow-2xl" />
+        <div>
+          <h1 class="text-5xl font-bold">La nostra Analisi</h1>
+          <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+            quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+          <button class="btn btn-primary">Get Started</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded">
+    <nav>
+      <div class="grid grid-flow-col gap-4">
+        <a class="btn btn-ghost" href="https://www.instagram.com/lightwork.project/" target="_blank">
+          <i class="ri-instagram-line ri-xl"></i>
+        </a>
+        <a class="btn btn-ghost" href="https://twitter.com/LightWork5IC" target="_blank">
+          <i class="ri-twitter-x-line ri-lg"></i>
+        </a>
+        <a class="btn btn-ghost" href="https://github.com/LightWork5IC/SitoWeb" target="_blank">
+          <i class="ri-github-fill ri-xl"></i>
+        </a>
+      </div>
+    </nav>
+    <aside>
+      <p>Sito realizzato a scopo didattico</p>
+    </aside>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>
