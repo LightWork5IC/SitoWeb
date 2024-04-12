@@ -1,16 +1,64 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <link rel="stylesheet" href="./src/index.css">
-  </head>
-  <body>
-    <div>
-      <h1>Hello Vite!</h1>  
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lightwork</title>
+  <link rel="stylesheet" href="./src/index.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Header start -->
+  <header class="sticky w-full">
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a>Il progetto</a></li>
+            <li><a>Il team</a></li>
+            <li><a>I dati</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-xl">Lightwork</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Il progetto</a></li>
+          <li><a>Il team</a></li>
+          <li><a>I dati</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn btn-ghost" href="https://www.instagram.com/lightwork.project/" target="_blank">
+          <i class="ri-instagram-line ri-xl"></i>
+        </a>
+        <a class="btn btn-ghost" href="https://twitter.com/LightWork5IC" target="_blank">
+          <i class="ri-twitter-x-line ri-xl"></i>
+        </a>
+        <a class="btn btn-ghost" href="https://github.com/LightWork5IC/SitoWeb" target="_blank">
+          <i class="ri-github-fill ri-xl"></i>
+        </a>
+      </div>
     </div>
-    <script type="module" src="/main.js"></script>
-  </body>
+  </header>
+  <!-- Header end -->
+  <main class="mt-4">
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores tenetur accusamus ex eveniet provident,
+      magnam optio similique dignissimos eos nobis debitis, odit eligendi, vitae voluptatum atque eaque architecto?
+      Deleniti, consectetur.
+    </p>
+  </main>
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>
